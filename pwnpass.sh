@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 
-PASSHASH=
-
 # Get the password
 read_hash()
 {
