@@ -26,5 +26,5 @@ if [ -z "$PWNED" ]
 then
     echo "Provided password has not been pwned."
 else
-    echo "Provided password has been pwned $PWNED times"
+    echo "Provided password has been pwned $PWNED times."
 fi
