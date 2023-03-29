@@ -5,7 +5,7 @@ read_hash()
 {
     stty -echo
     trap 'stty echo' EXIT
-    eval $1='$(read; printf "%s" "$REPLY" | shasum -a 1 | sed "s/ .*//")'
+    eval $1='$(head -n 1 | sed -z "$ s/\n$//" | shasum -a 1 | sed "s/ .*//")'
     stty echo
     trap - EXIT
 
